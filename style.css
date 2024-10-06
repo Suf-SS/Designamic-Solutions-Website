@@ -1,0 +1,177 @@
+body,h1,h2,h4,h5,h6 {
+  font-family: "Raleway", sans-serif;
+ 
+}
+
+body, html {
+  height: 100%;
+  line-height: 1.8;
+  
+}
+html {
+  scroll-behavior: smooth;
+}
+
+/* Full height image header */
+.bgimg-1 {
+  background-position: center;
+  background-size: cover;
+  background-image: url("BKG.png");
+
+ min-height: 100%;
+}
+
+.w3-bar .w3-button {
+  color: #C0498B;
+  font-weight: bold;
+  background-color: f1f1f1;
+}
+
+/* Style the logo to be larger and responsive */
+.navbar-logo {
+  height: 400px;   /* Adjust the height as needed */
+  width: auto;    /* This keeps the aspect ratio */
+}
+
+/* Adjust logo size for larger screens */
+@media (min-width: 768px) {
+  .navbar-logo {
+    height: 100px;  /* Larger size for wider screens */
+  }
+}
+
+/* Optional: Further increase for very large screens */
+@media (min-width: 1200px) {
+  .navbar-logo {
+    height: 120px;
+  }
+}
+/* Flexbox container for header */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+ 
+  height: auto; /* Set a standard height for the header */
+}
+
+/* Style the logo */
+.navbar-logo {
+  height: 250px; /* Adjust this based on your desired logo size */
+  width: auto;
+  padding: 0;
+  margin: 0;
+}
+
+/* Style the navigation menu */
+.navbar {
+  display: flex;
+  align-items: center; /* Ensure the items inside are vertically centered */
+}
+
+/* Style individual nav links */
+.navbar a {
+  text-decoration: none;
+  padding: 0 20px; /* Adjust for spacing between items */
+  color: #333;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+/* Adjust for mobile view */
+@media (max-width: 700px) {
+  .header {
+    flex-direction: column; /* Stack the logo and the navbar vertically */
+   
+  }
+
+  .navbar a {
+    padding: 10px 0; /* Add more vertical padding between items in mobile */
+  }
+}
+/* Change color of the navbar icon */
+.w3-bar .fa-bars {
+  color: #C0498B; /* Change to any color you want */
+}
+
+/* Change color of navbar icon on hover */
+.w3-bar .fa-bars:hover {
+  color: #C0498B; /* Example hover color */
+}
+.w3-black, .w3-hover-black:hover {
+  color: #C0498B !important;
+  background-color: #fff !important;
+  font-weight: bold;
+}
+.w3-light-grey, .w3-hover-light-grey:hover, .w3-light-gray, .w3-hover-light-gray:hover {
+  color: #C0498B !important;
+  background-color: #FFFFFF;
+
+}
+
+.w3-white, .w3-hover-white:hover {
+  color: #C0498B !important;
+  background-color: #ffffff !important;
+  font-weight: bolder;
+}
+P{
+color: #C0498B;
+font-family: "Raleway", sans-serif;
+}
+h3{
+
+font-weight:bold;
+color: #C0498B;
+font-family: "Raleway", sans-serif;
+}
+.w3-border {
+  border: 1px solid #C0498B !important;
+}
+
+.w3-input {
+  padding: 8px;
+  display: block;
+  border: none;
+  border-bottom: 1px solid #C0498B;
+  width: 100%;
+}
+h3{
+  font-family: "Raleway", sans-serif;
+  font-weight: bold;
+  color: #C0498B;
+}
+button {
+  background-color:#FFFFFF;
+  color: #C0498B;
+  text-align: center;
+  border: solid;
+  border-color: #C0498B;
+  display: inline-block;
+  font-size: 16px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+ }
+button:hover {
+  background-color: #f1f1f1;
+  color: #000;
+  border: solid;
+  border-color: #f1f1f1;
+}
+p1{
+ font-family: Arial, Helvetica, sans-serif; 
+ color: #C0498B;
+ font-weight: 400;
+}
+/* Adjust scroll position to account for fixed navbar */
+section {
+  scroll-margin-top: 0px; /* Adjust this value depending on your navbar height */
+}
+h7{
+font-family: railway, sans-serif;
+font-weight: bolder;
+color: #C0498B;
+
+}
+.w3-hide-small{
+  text-align: center;
+}
