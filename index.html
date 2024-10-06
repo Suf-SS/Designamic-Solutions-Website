@@ -1,114 +1,105 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-<title>Designamic Solutions</title>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-<link rel="stylesheet" href="style.css">
-<script src="script.js"></script>
-
-<!-- Add smooth scrolling for better user experience -->
-<style>
-html {
-  scroll-behavior: smooth;
-}
-</style>
-
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Designamic Solutions</title>
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
 </head>
+
 <body>
 
 <!-- Navbar (sit on top) -->
 <div class="w3-top">
-  <div class="w3-bar w3-white w3-card" id="myNavbar">
-  <!-- Add the logo -->
-  <a href="#home" class="w3-bar-item w3-button w3-wide">
-    <img src="logo2.png" alt="Designamic Solutions Logo" class="navbar-logo">
-  </a>
-  
-    <!-- Right-sided navbar links -->
-    <div class="w3-right w3-hide-small">
-      <a href="#about" class="w3-bar-item w3-button">About</a>
-      <a href="#services" class="w3-bar-item w3-button">Services</a>
-      <a href="#portfolio" class="w3-bar-item w3-button">Portfolio</a>
-      <a href="#contact" class="w3-bar-item w3-button">Contact</a>
+    <div class="w3-bar w3-white w3-card" id="myNavbar">
+        <!-- Logo -->
+        <a href="#home" class="w3-bar-item w3-button w3-wide">
+            <img src="logo2.png" alt="Designamic Solutions Logo" class="navbar-logo">
+        </a>
+        <!-- Right-sided navbar links -->
+        <div class="w3-right w3-hide-small">
+            <a href="#about" class="w3-bar-item w3-button">About</a>
+            <a href="#services" class="w3-bar-item w3-button">Services</a>
+            <a href="#portfolio" class="w3-bar-item w3-button">Portfolio</a>
+            <a href="#contact" class="w3-bar-item w3-button">Contact</a>
+        </div>
+        <!-- Menu icon for small screens -->
+        <a href="javascript:void(0)" class="w3-bar-item w3-button w3-right w3-hide-large w3-hide-medium" onclick="w3_open()">
+            <i class="fa fa-bars"></i>
+        </a>
     </div>
-    <!-- Hide right-floated links on small screens and replace them with a menu icon -->
-
-    <a href="javascript:void(0)" class="w3-bar-item w3-button w3-right w3-hide-large w3-hide-medium" onclick="w3_open()">
-      <i class="fa fa-bars"></i>
-    </a>
-  </div>
 </div>
 
-<!-- Sidebar on small screens when clicking the menu icon -->
+<!-- Sidebar for small screens -->
 <nav class="w3-sidebar w3-bar-block w3-black w3-card w3-animate-left w3-hide-medium w3-hide-large" style="display:none" id="mySidebar">
-  <a href="javascript:void(0)" onclick="w3_close()" class="w3-bar-item w3-button w3-large w3-padding-16">X</a>
-  <a href="#about" onclick="w3_close()" class="w3-bar-item w3-button">About</a>
-  <a href="#services" onclick="w3_close()" class="w3-bar-item w3-button">Services</a>
-  <a href="#portfolio" onclick="w3_close()" class="w3-bar-item w3-button">Portfolio</a>
-  <a href="#contact" onclick="w3_close()" class="w3-bar-item w3-button">Contact</a>
+    <a href="javascript:void(0)" onclick="w3_close()" class="w3-bar-item w3-button w3-large w3-padding-16">X</a>
+    <a href="#about" onclick="w3_close()" class="w3-bar-item w3-button">About</a>
+    <a href="#services" onclick="w3_close()" class="w3-bar-item w3-button">Services</a>
+    <a href="#portfolio" onclick="w3_close()" class="w3-bar-item w3-button">Portfolio</a>
+    <a href="#contact" onclick="w3_close()" class="w3-bar-item w3-button">Contact</a>
 </nav>
 
 <!-- Header with full-height image -->
 <header class="bgimg-1 w3-display-container w3-grayscale-min" id="home">
-  <div class="w3-display-left w3-text-white" style="padding:53px">
-    <br/>
-    <span class="w3-jumbo w3-hide-small">Innovative Web Design Tailored for You</span>
-    <br/>
-    <span class="w3-xxlarge w3-hide-large w3-hide-medium">Innovative Web Design Tailored for You</span><br>
-  </div> 
-
+    <div class="w3-display-left w3-text-white" style="padding:53px">
+        <br/>
+        <span class="w3-jumbo w3-hide-small">Innovative Web Design Tailored for You</span>
+        <br/>
+        <span class="w3-xxlarge w3-hide-large w3-hide-medium">Innovative Web Design Tailored for You</span>
+    </div>
 </header>
 
 <!-- About Section -->
 <div class="w3-container" style="padding:128px 16px" id="about">
-  <h3 class="w3-center">About us</h3>
-  <p class="w3-center w3-large">At Designamic solutions we are passionate and dedicated to bringing your visions to life. Our mission is to create beautiful, functional websites that resonate with your audience.We believe that a website should be more than just visually appealing ,it should be an interactive platform that captivates, engages, and inspires your audience.Whether you need a website to inform and engage your audience or a fully functional e-commerce platform, we are committed to delivering the highest quality solutions tailored to your needs. At Designamic Solutions, we strive to exceed expectations, ensuring every client receives a website that not only meets their goals but elevates their brands online presence. </p>
+    <h3 class="w3-center">About Us</h3>
+    <p class="w3-center w3-large">At Designamic solutions we are passionate and dedicated to bringing your visions to life. Our mission is to create beautiful, functional websites that resonate with your audience.We believe that a website should be more than just visually appealing ,it should be an interactive platform that captivates, engages, and inspires your audience.Whether you need a website to inform and engage your audience or a fully functional e-commerce platform, we are committed to delivering the highest quality solutions tailored to your needs. At Designamic Solutions, we strive to exceed expectations, ensuring every client receives a website that not only meets their goals but elevates their brands online presence. </p>
   <div class="w3-row-padding w3-center" style="margin-top:64px">
-    <!-- Services Section -->
-    <div class="w3-container" style="padding:128px 16px" id="team">
-      <h3 class="w3-center">Our Services</h3>
-      <p class="w3-center w3-large"> Our goal is to make your website the cornerstone of your online presence, providing a seamless and effective platform for your business. Here's a breakdown of our collaborative process:
-        <br/>
-        1. Initial Consultation: We'll begin by discussing the specific requirements of your website. This can take place over the phone or in person, allowing us to understand your vision and what resources we'll need from you to move forward.
-        <br/>
-        
-        2. Homepage Design: Our team will first design and develop the homepage, which serves as the foundation of your site. Once it's ready, you'll have the opportunity to review it and request any changes you'd like.
-        <br/>
-        3. Full Website Development: After you're satisfied with the homepage, we will proceed to build the rest of the website, ensuring consistency, functionality, and alignment with your brand.
-      </br>
-      
-      4. Final Review & Handover: Once the entire website is complete and you’re fully happy with the final product, we will provide you with a comprehensive guide on how to edit and update your site. In addition, we’ll guide you through the process of renewing your web domain and hosting, delivering this information both via email and as a physical copy for your convenience.
+<!-- Services Section -->
+<div class="w3-container" style="padding:128px 16px" id="services">
+    <h3 class="w3-center">Our Services</h3>
+    <p class="w3-center w3-large"> Our goal is to make your website the cornerstone of your online presence, providing a seamless and effective platform for your business. Here's a breakdown of our collaborative process:
       <br/>
-      Please note: The cost of building your website will be discussed during the initial consultation, and payment will only be required once you are completely satisfied with your finished website.
-      </p>
-      <div class="w3-row-padding w3-grayscale" style="margin-top:64px">
-        <div class="w3-col l3 m6 w3-margin-bottom">
-        </div>
+      1. Initial Consultation: We'll begin by discussing the specific requirements of your website. This can take place over the phone or in person, allowing us to understand your vision and what resources we'll need from you to move forward.
+      <br/>
+      
+      2. Homepage Design: Our team will first design and develop the homepage, which serves as the foundation of your site. Once it's ready, you'll have the opportunity to review it and request any changes you'd like.
+      <br/>
+      3. Full Website Development: After you're satisfied with the homepage, we will proceed to build the rest of the website, ensuring consistency, functionality, and alignment with your brand.
+    </br>
+    
+    4. Final Review & Handover: Once the entire website is complete and you’re fully happy with the final product, we will provide you with a comprehensive guide on how to edit and update your site. In addition, we’ll guide you through the process of renewing your web domain and hosting, delivering this information both via email and as a physical copy for your convenience.
+    <br/>
+    Please note: The cost of building your website will be discussed during the initial consultation, and payment will only be required once you are completely satisfied with your finished website.
+    </p>
+    <div class="w3-row-padding w3-grayscale" style="margin-top:64px">
+      <div class="w3-col l3 m6 w3-margin-bottom">
       </div>
     </div>
+</div>
 
 <!-- Portfolio Section -->
-<div class="w3-container" style="padding:128px 16px" id="work">
-  <h3 class="w3-center">Portfolio</h3>
-  <p class="w3-center w3-large">Checkout our latest projects </p>
-
-  <div class="w3-row-padding" style="margin-top:64px">
-    <div class="w3-col l3 m6">
-    <p>Suf's Blog</p>
-      <img src="p1.png" style="width:100%" alt="Sufs Blog">
-      <a href="https://sufsblog.glitch.me/"><button>View project</button></a>
+<div class="w3-container" style="padding:128px 16px" id="portfolio">
+    <h3 class="w3-center">Portfolio</h3>
+    <p class="w3-center w3-large">Check out our latest projects</p>
+    <div class="w3-row-padding" style="margin-top:64px">
+        <div class="w3-col l3 m6">
+            <h3>Suf's Blog</h3>
+            <img src="p1.png" style="width:100%" alt="Suf's Blog">
+            <a href="https://sufsblog.glitch.me/"><button>View Project</button></a>
+        </div>
     </div>
-  </div>
-
+</div>
 
 <!-- Contact Section -->
 <div class="w3-container" style="padding:128px 16px" id="contact">
-  <h3 class="w3-center">Contact</h3>
-  <p class="w3-center w3-large">Do you have a project in mind? We’d love to hear from you! Reach out to us at designamicsolutions@outlook.com to discuss your ideas and how we can bring them to life. <a href="mailto:designamicsolutions@outlook.com">designamicsolutions@outlook.com</a>.</p>
+  <h3 class="w3-center">Contact Us</h3>
+  <p class="w3-center w3-large">Do you have a project in mind? We’d love to hear from you! Reach out to us at <strong>designamicsolutions@outlook.com</strong>  to discuss your ideas and how we can bring them to life. <a href="mailto:designamicsolutions@outlook.com"></a></p>
+  
+  <br>
   
   <br>
 
@@ -119,6 +110,7 @@ html {
 <footer>
   <h7>&copy; 2024 Designamic Solutions.</h7>
 </footer>
+
 
 </body>
 </html>
