@@ -143,6 +143,12 @@ h7{
   }
   p{
     color: #C0498B;
+    display: flex;
+    flex-direction: column;
+     font-size: 18px;
+     line-height: 1.6
+
+
   }
   .w3-black, .w3-hover-black:hover {
     color: #fff !important;
@@ -151,11 +157,16 @@ h7{
 .services-section {
   max-width: 800px;
   margin: 0 auto;
-  padding: 20px;
+  font-size: 18px;
 }
 
 .services-list {
   display: flex;
   flex-direction: column;
   gap: 20px; /* Adds space between each service */
+}
+.service-item {
+  text-align: left;
+  font-size: 18px; /* Consistent font size */
+  line-height: 1.6;
 }
