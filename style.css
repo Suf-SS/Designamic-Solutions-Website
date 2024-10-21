@@ -174,3 +174,14 @@ h7{
   scroll-margin-top: 180px; /* Try increasing this to push content down */
 }
 
+@media screen and (max-width: 768px) {
+  #services {
+    scroll-margin-top: 120px; /* Adjust this to fit the height of your mobile navbar */
+  }
+}
+
+@media screen and (max-width: 576px) {
+  #services {
+    scroll-margin-top: 100px; /* Further adjust for very small devices */
+  }
+}
