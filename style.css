@@ -170,3 +170,7 @@ h7{
   font-size: 18px; /* Consistent font size */
   line-height: 1.6;
 }
+#services {
+  scroll-margin-top: 180px; /* Try increasing this to push content down */
+}
+
