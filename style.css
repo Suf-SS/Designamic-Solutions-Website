@@ -176,7 +176,7 @@ h7{
 
 @media screen and (max-width: 768px) {
   #services {
-    scroll-margin-top: 120px; /* Adjust this to fit the height of your mobile navbar */
+    scroll-margin-top: 180px; /* Adjust this to fit the height of your mobile navbar */
   }
 }
 
