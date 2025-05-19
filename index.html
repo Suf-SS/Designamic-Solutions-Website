@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <script src="script.js"></script>
     <link rel="icon" href="logo2.png" type="image/png">
 </head>
@@ -41,6 +42,7 @@
     <a href="#services" onclick="w3_close()" class="w3-bar-item w3-button">Services</a>
     <a href="#contact" onclick="w3_close()" class="w3-bar-item w3-button">Contact</a>
 </nav>
+<div id="overlay" onclick="w3_close()"></div>
 
 <!-- Header with full-height image -->
 <header class="bgimg-1 w3-display-container w3-grayscale-min" id="home">
@@ -51,57 +53,68 @@
         <span class="w3-xxlarge w3-hide-large w3-hide-medium">Innovative Tech Solutions Tailored for You</span>
     </div>
 </header>
-
+<br>
 <!-- About Section -->
-<div class="w3-container" style="padding:128px 16px" id="about">
-    <h3 class="w3-center">About Us</h3>
-    <p class="w3-center w3-large">  At Designamic Solutions, I’m passionate about helping people get their tech working again. Based in Gloucester, I provide honest, affordable IT support for everyday issues like laptop resets, battery replacements, software installations, and more. Whether your laptop is running slow, your battery’s given up, or you need advice on what part to buy, I’m here to make it simple. You bring the part, I bring the fix.
+<section class="services-section" id="about">
+
+
+  <h2 class="w3-center">About Us</h2>
+  <p class="w3-center w3-large">  At Designamic Solutions, I’m passionate about helping people get their tech working again. Based in Gloucester, I provide honest, affordable IT support for everyday issues like laptop resets, battery replacements, software installations, and more. Whether your laptop is running slow, your battery’s given up, or you need advice on what part to buy, I’m here to make it simple. You bring the part, I bring the fix.
 
 My mission is to offer practical, high-quality tech solutions tailored to your needs. At Designamic Solutions, you’re not just getting a service; you’re getting a reliable partner who genuinely cares about solving your problem. </p>
-  <div class="w3-row-padding w3-center" style="margin-top:64px">
+</section>
 <!-- Services Section -->
-<!-- Services Section -->
-<div class="services-section" id="services"> <!-- Add id="services" here -->
-    <br/>
-  <h3 class="w3-center">Our Services</h3>
-  <p class="w3-center">My goal is to make your tech work for you and not against you. Whether it's a slow laptop, outdated software, or hardware that needs replacing, I provide practical, local IT support that keeps your digital life running smoothly. Here's a breakdown of what I can offer:</p>
-  <div class="services-list">
-    <div class="service-item">
-      <strong>Step 1 -Get in Touch:</strong> Tell me what’s not working or what you need help with.  Email: designamicsolutions@outlook.com. I’ll reply with any questions and give you a clear quote.
-    </div>
-    <div class="service-item">
-      <strong>Step 2 — Book Your Service:</strong> Once you're ready, we’ll arrange a time that works for you. This will either be face-to-face or remote, depending on the issue.
-    </div>
-    <div class="service-item">
-      <strong>Step 3 — Ongoing Support (Optional):</strong> If you’re happy with the first service, you can sign up for monthly check-ups:
+<section class="services-section" id="services">
+  <h2>Services</h2>
+  <p class="intro">All services are available locally in Gloucester or remotely depending on the situation.</p>
+  <div class="service-grid">
+    <div class="card"><h3> Computer Reset or Setup</h3><p>£35</p></div>
+    <div class="card"><h3>Battery or RAM Replacement</h3><p>£30 <em>(you supply the part)</em></p></div>
+    <div class="card"><h3>Operating System Install/Upgrade</h3><p>£40</p></div>
+    <div class="card"><h3>Software Installation</h3><p>£20 <em>(you provide the software)</em></p></div>
+    <div class="card"><h3>Virus & Malware Removal</h3><p>£30</p></div>
+    <div class="card"><h3>Printer Setup or Fixing</h3><p>£30</p></div>
+  </div>
 
- ✅ Updates & performance checks
-
- ✅ Light clean-ups & security review
-
- ✅ Just £15/month. At Designamic Solutions, I’m passionate about helping people get their tech working again.
+  <!-- Promo -->
+  <div class="promo-card">
+    <div class="promo-heading">💡 Ongoing Support (Optional)</div>
+    <div class="promo-content">
+      <p>Sign up for monthly check-ups:</p>
+      <ul class="promo-list">
+        <li>✅ Updates & performance checks</li>
+        <li>✅ Light clean-ups & security review</li>
+        <li><strong>💷 Just £10/month</strong></li>
+      </ul>
+      <p><em>No pressure 🙂 just great value if you want a peace of mind.</em></p>
     </div>
   </div>
-</div>
+</section>
 
 
 
 
-<!-- Contact Section -->
-<div class="w3-container" style="padding:128px 16px" id="contact">
-  <h3 class="w3-center">Contact Us</h3>
-  <p class="w3-center w3-large">Do you have a project in mind? I’d love to hear from you! Reach out to us at <strong>designamicsolutions@outlook.com</strong>  to discuss your ideas and how we can bring them to life. <a href="mailto:designamicsolutions@outlook.com"></a></p>
+
+
+<!-- Contact -->
+<section class="contact-section" id="contact">
+  <h2>Contact Us</h2>
+  <div class="footer-contact">
+    <p><strong>Got a tech issue? Let’s solve it!</strong></p>
+    <p>📧 Email: <a href="mailto:designamicsolutions@outlook.com">designamicsolutions@outlook.com</a></p>
+    <p>📲Follow & message me on social media by selecting the icons below.</p>
+  </div>
   
-  <br>
-  
-  <br>
-
-
-
+</section>
 
 <!-- Footer -->
-<footer>
-  <h7>&copy; 2025 Designamic Solutions</h7>
+<footer class="footer">
+  <p>&copy; 2025 Designamic Solutions</p>
+  <div class="footer-social">
+    <a href="https://www.facebook.com/profile.php?id=61569075385103" target="_blank" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
+    <a href="https://www.instagram.com/designamicsolutions/" target="_blank" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+    <a href="https://www.tiktok.com/@designamicsolutions" target="_blank" aria-label="TikTok"><i class="fab fa-tiktok"></i></a>
+  </div>
 </footer>
 
 
