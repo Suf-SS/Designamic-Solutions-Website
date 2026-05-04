@@ -14,6 +14,7 @@ document.addEventListener('DOMContentLoaded', function () {
 });
 
 
+
  let currentSlide = 0;
   const slides = document.querySelectorAll('.testimonial-slide');
   const dots = document.querySelectorAll('.dot');
