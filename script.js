@@ -11,14 +11,12 @@ document.addEventListener('DOMContentLoaded', function () {
     sidebar.style.display = "none";
     overlay.style.display = "none";
   }
-});
 
-
-
- let currentSlide = 0;
+  // Testimonial Slider
+  let currentSlide = 0;
   const slides = document.querySelectorAll('.testimonial-slide');
   const dots = document.querySelectorAll('.dot');
- 
+
   function showSlide(index) {
     slides.forEach(s => s.classList.remove('active'));
     dots.forEach(d => d.classList.remove('active'));
@@ -26,13 +24,15 @@ document.addEventListener('DOMContentLoaded', function () {
     dots[index].classList.add('active');
     currentSlide = index;
   }
- 
-  function goToSlide(index) {
+
+  window.goToSlide = function(index) {
     showSlide(index);
   }
- 
+
   // Auto slide every 4 seconds
   setInterval(() => {
     let next = (currentSlide + 1) % slides.length;
     showSlide(next);
   }, 4000);
+
+});
