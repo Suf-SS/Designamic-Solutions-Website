@@ -340,3 +340,15 @@ section, .w3-container {
 .dot.active {
   background-color: #c2185b;
 }
+/* Force equal height cards - override W3CSS */
+#our-work .service-grid {
+  display: flex !important;
+  flex-wrap: wrap !important;
+  align-items: stretch !important;
+}
+
+#our-work .service-grid .card {
+  display: flex !important;
+  flex-direction: column !important;
+  flex: 1 1 260px !important;
+}
