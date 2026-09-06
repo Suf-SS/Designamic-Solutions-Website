@@ -207,14 +207,14 @@ section, .w3-container {
   margin-bottom: 40px;
 }
 
-/* Service grid - flex for equal height cards */
+/* Service grid */
 .service-grid {
-  display: flex;
-  flex-wrap: wrap;
+  display: flex !important;
+  flex-wrap: wrap !important;
   gap: 24px;
   max-width: 1000px;
   margin: 0 auto;
-  align-items: stretch;
+  align-items: stretch !important;
 }
 
 .card {
@@ -223,14 +223,20 @@ section, .w3-container {
   padding: 24px;
   border: 1px solid #C0498B;
   transition: 0.3s ease;
-  flex: 1 1 260px;
-  display: flex;
-  flex-direction: column;
+  flex: 1 1 260px !important;
+  display: flex !important;
+  flex-direction: column !important;
 }
 
 .card:hover {
   transform: translateY(-8px);
   box-shadow: 0 12px 25px rgba(192, 73, 139, 0.2);
+}
+
+/* Push service label to bottom of Our Work cards */
+#our-work .service-grid .card > p:last-child {
+  margin-top: auto !important;
+  padding-top: 10px;
 }
 
 /* Promo section */
@@ -339,16 +345,4 @@ section, .w3-container {
 
 .dot.active {
   background-color: #c2185b;
-}
-/* Force equal height cards - override W3CSS */
-#our-work .service-grid {
-  display: flex !important;
-  flex-wrap: wrap !important;
-  align-items: stretch !important;
-}
-
-#our-work .service-grid .card {
-  display: flex !important;
-  flex-direction: column !important;
-  flex: 1 1 260px !important;
 }
