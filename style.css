@@ -209,8 +209,7 @@ section, .w3-container {
 
 /* Service grid */
 .service-grid {
-  display: flex !important;
-  flex-wrap: wrap !important;
+  display: inline-grid;
   gap: 24px;
   max-width: 1000px;
   margin: 0 auto;
