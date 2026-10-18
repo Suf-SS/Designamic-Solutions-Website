@@ -222,8 +222,7 @@ section, .w3-container {
   padding: 24px;
   border: 1px solid #C0498B;
   transition: 0.3s ease;
-  flex: 1 1 260px !important;
-  display: flex !important;
+  display: inline-grid;
   flex-direction: column !important;
 }
 
